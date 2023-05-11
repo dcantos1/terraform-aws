@@ -2,9 +2,8 @@ const AWS = require("aws-sdk");
 
 const dynamo = new AWS.DynamoDB.DocumentClient();
 
-const tableName = "http-crud-proyecto01-dev"
-
-//let environment = process.env.ENV
+let env_name = process.env.env_name
+const tableName = env_name
 
 exports.handler = async (event, context) => {
   let body;

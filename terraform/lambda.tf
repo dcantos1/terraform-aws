@@ -10,7 +10,7 @@ resource "aws_lambda_function" "test_lambda" {
 
   environment {
     variables = {
-      foo = "bar"
+      env_name = "${var.app_id}-${var.app_env}"
     }
   }
   tags = {
