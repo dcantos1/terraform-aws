@@ -1,4 +1,4 @@
 # terraform-aws
-Lambda
-API
-DynamoBD
+- Lambda
+- API
+- DynamoBD
