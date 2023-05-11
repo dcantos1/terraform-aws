@@ -55,7 +55,7 @@ jobs:
         rm -rf .terraform
         terraform init
         terraform validate
-        terraform workspace new dev
+#        terraform workspace new dev
         terraform workspace select dev
         terraform plan -var-file tfvars/$ENV.tfvars -out plan.out
         terraform apply "plan.out"
