@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
-    "pack" : "zip -jr function.zip src/index-dev.js"
+    "pack" : "zip -jr function.zip src/index.js"
   },
   "author": "David Cantos",
   "license": "ISC"
