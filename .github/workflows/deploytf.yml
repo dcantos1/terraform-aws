@@ -5,7 +5,7 @@ on:
     branches: 
     - develop
     - testing
-    - master
+    - main
 
 
 jobs:
@@ -106,7 +106,7 @@ jobs:
  
   deploy-prod:
     name: '🚀Deploy Terraform to prod'
-    if: ${{ github.ref == 'refs/heads/master' }}
+    if: ${{ github.ref == 'refs/heads/main' }}
     needs: init-zip
     runs-on: ubuntu-latest
     environment: develop
