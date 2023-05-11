@@ -11,6 +11,6 @@ terraform {
     bucket  = "training-tfstate-terra"
     region  = "us-east-1"
     encrypt = true
-    key     = "proyecto01/deploygithub.tfstate"
+    key     = "proyecto01/deploy.tfstate"
   }
 }
